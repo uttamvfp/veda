@@ -1,0 +1,87 @@
+class finger:
+    size = 0
+    def set_size(_size):
+	    size = _size
+    def get_size():
+    	return size
+
+class hand:
+    fingers={}
+    max_fingers=5
+    for i in range(max_fingers):
+        fingers[i] = finger()
+    def move():
+        print "hand moved"
+
+class head:
+    def move():
+        print "head moved"
+
+class eye:
+    def see():
+        print "watched with this eye"
+        
+class leg:
+    def walk():
+        print "this leg walked"
+    
+class thousands:
+	value = 0
+	def set_value(val):
+		value = val
+	def get_value(self):
+		return self.value
+
+class heads:
+	INFINITY = thousands().get_value()
+	heads = {}
+	for i in range(INFINITY):
+		heads[i] = head()
+
+class eyes:
+	INFINITY = thousands()
+	eyes = {}
+	for i in range(INFINITY.get_value()):
+		eyes[i] = eye()
+
+class legs:
+	INFINITY = thousands()
+	legs = {}
+	for i in range(INFINITY.get_value()):
+		legs[i] = leg()
+            
+class hands:
+	INFINITY = thousands()
+	hands = {}
+	for i in range(INFINITY.get_value()):
+            hands[i] = hand()
+	    
+class bhumi:
+	def get_english_name():
+		return "Earth"
+
+class sourmandal:
+	sun = 0 
+	earth = bhumi()
+	def get_english_name():
+		return "Solar System"
+
+    
+class akashganga:
+	solar_systems={}
+	solar_systems["ours"]=sourmandal()
+
+class vishwa:
+	galaxies = {}
+	galaxies["ours"] =akashganga()
+    
+            
+
+class purusha:
+	heads = heads()
+	eyes =  eyes()
+	legs =  legs()
+	heart = vishwa()
+	def get_size_of_vishwa():
+		single_finger = finger()
+		return single_finger.get_size() * 10
